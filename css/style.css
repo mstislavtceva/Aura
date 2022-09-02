@@ -575,6 +575,7 @@ body {
 /* auction */
 .auction {
   padding-top: 39px;
+  padding-bottom: 89px;
 }
 
 .auction__title {
@@ -653,3 +654,64 @@ body {
 }
 
 /* new */
+.new {
+  padding-top: 88px;
+  background-color: var(--color-dark);
+}
+
+.new__title {
+  padding-left: 65px;
+  margin-bottom: 31px;
+  font-family: 'Russo';
+  font-size: 60px;
+  line-height: 72px;
+  color: var(--color-light);
+  background-image: url("../img/fire.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 48px 48px;
+}
+
+.new__slider {
+  overflow: hidden;
+  margin-bottom: 61px;
+  width: 100%;
+}
+
+.new__stickers {
+  display: flex;
+}
+
+.new__stickers img:not(:last-child) {
+  margin-right: 26px;
+}
+
+.new__pagination {
+  position: initial;
+  padding-bottom: 89px;
+}
+
+.swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  border: 2px solid var(--color-red);
+  border-radius: 40px;
+  padding: 8px 21px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--color-light);
+  background-color: transparent;
+  opacity: 1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet:not(:last-child) {
+  margin-right: 40px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-red);
+}
+
+/* subscribe */

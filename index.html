@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -236,27 +237,54 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="new__stickers">
-                <img src="img/new-1.png" alt="Изображение ститкера">
-                <img src="img/new-2.png" alt="Изображение ститкера">
-                <img src="img/new-3.png" alt="Изображение ститкера">
+                <picture>
+                  <source srcset="img/new-1-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-1.png" alt="Изображение ститкера">
+                </picture>
+                <picture>
+                  <source srcset="img/new-2-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-2.png" alt="Изображение ститкера">
+                </picture>
+                <picture>
+                  <source srcset="img/new-3-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-3.png" alt="Изображение ститкера">
+                </picture>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="new__stickers">
-                <img src="img/new-4.png" alt="Изображение ститкера">
-                <img src="img/new-5.png" alt="Изображение ститкера">
+                <picture>
+                  <source srcset="img/new-4-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-4.png" alt="Изображение ститкера">
+                </picture>
+                <picture>
+                  <source srcset="img/new-5-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-5.png" alt="Изображение ститкера">
+                </picture>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="new__stickers">
-                <img src="img/new-6.png" alt="Изображение ститкера">
-                <img src="img/new-7.png" alt="Изображение ститкера">
-                <img src="img/new-8.png" alt="Изображение ститкера">
+                <picture>
+                  <source srcset="img/new-6-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-6.png" alt="Изображение ститкера">
+                </picture>
+                <picture>
+                  <source srcset="img/new-7-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-7.png" alt="Изображение ститкера">
+                </picture>
+                <picture>
+                  <source srcset="img/new-8-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-8.png" alt="Изображение ститкера">
+                </picture>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="new__stickers">
-                <img src="img/new-9.png" alt="Изображение ститкера">
+                <picture>
+                  <source srcset="img/new-9-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-9.png" alt="Изображение ститкера">
+                </picture>
               </div>
             </div>
           </div>
@@ -294,7 +322,7 @@
               Отправь нам от&nbsp;трёх до&nbsp;пяти своих работ и&nbsp;напиши свой ник в&nbsp;телеграме.
               Если наши
               кураторы решат, что нам по&nbsp;пути, то мы обязательно свяжемся с&nbsp;тобой
-              и&nbsp;обговорим условия сотрудничества! <b>Удачи!</b>
+              и обговорим условия сотрудничества! <b>Удачи!</b>
             </p>
             <img src="img/become-author.png" class="become-author__decorate" aria-hidden="true">
           </div>
@@ -306,9 +334,11 @@
             </label>
             <input type="text" class="form-input become-author__input form-input--light"
               placeholder="@telegram_nickname" name="telegram_nick">
-            <button class="btn btn--fill become-author__btn">
-              <span class="btn__text">Отправить</span>
-            </button>
+            <div class="become-author__wrap">
+              <button class="btn btn--fill become-author__btn">
+                <span class="btn__text">Отправить</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -393,7 +423,7 @@
                 </div>
                 <h3 class="top-product__title">Sadsadsad</h3>
                 <div class="top-product__price">1.50&nbsp;ETH<span
-                    class="top-product__price-dollars">($5,365.62)($5,762.32)</span></div>
+                    class="top-product__price-dollars">($5,365.62)</span></div>
               </div>
             </article>
           </li>

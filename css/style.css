@@ -66,6 +66,7 @@ a {
 }
 
 body {
+  min-width: 320px;
   font-family: 'Muller', sans-serif;
   font-size: 20px;
   color: var(--color-dark);
@@ -330,7 +331,6 @@ body {
 
 .hero__btn--stroke {
   padding: 5px;
-  /* padding: 20px 47px; */
 }
 
 .hero__btn-text {
@@ -600,7 +600,7 @@ body {
 
 .auction__item {
   margin-bottom: var(--gap);
-  width: 296px;
+  width: calc((100% - (var(--gap) * 3)) / 4);
 }
 
 .auction__item:not(:nth-child(4n)) {
@@ -693,7 +693,7 @@ body {
   display: flex;
 }
 
-.new__stickers img:not(:last-child) {
+.new__stickers picture:not(:last-child) {
   margin-right: 26px;
 }
 

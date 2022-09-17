@@ -968,7 +968,6 @@ body {
 .top__item {
   margin-bottom: var(--gap);
   width: calc(50% - (var(--gap)) / 2);
-  max-height: 174px;
 }
 
 .top__item:not(:nth-child(2n)) {
